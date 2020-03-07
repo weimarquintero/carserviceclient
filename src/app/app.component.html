@@ -1,5 +1,13 @@
-<mat-toolbar color="primary">
-  <span>Welcome to {{title}}!</span>
-</mat-toolbar>
 
+<mat-toolbar color="primary"> 
+ 
+  <mat-toolbar-row>
+    <span>{{title}}</span>
+    <div class="navbar">
+    <a mat-button routerLink="/car-list">Cars</a>
+    <a mat-button routerLink="/owner-list">Owners</a>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>
 <router-outlet></router-outlet>
